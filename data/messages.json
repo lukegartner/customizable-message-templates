@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1001",
+    "companyIds": [1, 2, 3, 4, 5],
+    "message": "Welcome!",
+    "variables": ["guest", "company"]
+  },
+  {
+    "id": "1002",
+    "companyIds": [1, 2, 3, 4, 5],
+    "message": "Checkout Confirmation",
+    "variables": ["guest", "company"]
+  },
+  {
+    "id": "1003",
+    "companyIds": [1, 3, 5],
+    "message": "Beaches Closed - Dangerous Water Conditions",
+    "variables": ["guest", "company"]
+  },
+  {
+    "id": "1004",
+    "companyIds": [1, 3, 5],
+    "message": "Beaches Open and Safe",
+    "variables": ["guest", "company"]
+  },
+  {
+    "id": "1005",
+    "companyIds": [1, 2, 3, 4, 5],
+    "message": "Holiday Greeting",
+    "variables": ["guest", "company", "holiday"]
+  }
+]

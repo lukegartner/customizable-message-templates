@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "holiday": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "holiday": "Valentine's"
+  },
+  {
+    "id": 3,
+    "holiday": "Independence Day"
+  },
+  {
+    "id": 4,
+    "holiday": "Earth Day"
+  }
+]
