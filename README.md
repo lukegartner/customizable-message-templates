@@ -4,7 +4,7 @@
 
 This project has been deployed using Vercel. Following the link is the easiest way to interact with the program.
 
-[https://customizable-message-templates-7lul2odu0.vercel.app/](https://customizable-message-templates-7lul2odu0.vercel.app/)
+[https://customizable-message-templates-goa2up957.vercel.app/](https://customizable-message-templates-goa2up957.vercel.app/)
 
 ## Running the Program
 
