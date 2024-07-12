@@ -11,7 +11,7 @@ import { messageTemplates } from "@/utils/messageTemplates";
 const MessageConstructor = () => {
   // This state value contains the message constructed based on input values
   const [message, setMessage] = useState("");
-  // This state value contains the selcted message tempate to polulate required variale select elements
+  // This state value contains the selected message template to populate required select elements
   const [selectedMessageTemplate, setSelectedMessageTemplate] = useState({
     id: "",
     companyIds: [],
@@ -32,7 +32,7 @@ const MessageConstructor = () => {
     const company = companies.find((company) => company.id === companyId);
     const holiday = holidays.find((holiday) => holiday.id === holidayId);
 
-    // sets message the selected message template using a function stored in message Templates object
+    // sets message state the output from the selected message template
     setMessage(messageTemplates[messageId].populate(guest, company, holiday));
   };
   return (
