@@ -44,6 +44,6 @@ This project used testing to handle errors and edge cases manually testing for v
 
 ## Future Expansion
 
-With more time dedicated to this project I would like to introduce a database to store the data and using Next.js's convenient tools to fetch the json. I did not want to go outside the bounds of the instructions to use json files for this submission.
+With more time dedicated to this project I would like to introduce a database to store the data and use Next.js's convenient server tools to fetch the json. I did not want to go outside the bounds of the instructions by doing this and instead used json files for this submission.
 
-I would also like to add UI for adding new custom templates instead of just from the code and store them in the database for long term use.
+I would also like to add UI for adding new custom templates instead of just from the code and store them in the database for long term use. Currently custom messages can be created, but not fully functional message template editing form the UI.
