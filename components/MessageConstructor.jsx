@@ -27,13 +27,23 @@ const MessageConstructor = () => {
     const messageId = Number(formData.get("message"));
     const holidayId = Number(formData.get("holiday"));
 
-    // Finds guest and company objects by from json file by id
+    // Finds data in objects from json file by id
     const guest = guests.find((guest) => guest.id === guestId);
     const company = companies.find((company) => company.id === companyId);
     const holiday = holidays.find((holiday) => holiday.id === holidayId);
 
-    // sets message state the output from the selected message template
-    setMessage(messageTemplates[messageId].populate(guest, company, holiday));
+    // Custom message
+    const customMessage = formData.get("custom message");
+
+    // sets message state to the output from the selected message template
+    setMessage(
+      messageTemplates[messageId].populate(
+        guest,
+        company,
+        holiday,
+        customMessage
+      )
+    );
   };
   return (
     <>
@@ -138,6 +148,17 @@ const MessageConstructor = () => {
                 );
               })}
             </select>
+          )}
+          {selectedMessageTemplate.variables.includes("custom message") && (
+            <div>
+              {" "}
+              <textarea
+                className="textarea"
+                placeholder="Enter custom message here..."
+                name="custom message"
+                required
+              ></textarea>
+            </div>
           )}
         </div>
         {/* Create Message Button */}

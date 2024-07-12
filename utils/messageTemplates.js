@@ -1,6 +1,14 @@
 import { getTimeOfDayGreeting } from "./getTimeOfDayGreeting";
 
 export const messageTemplates = {
+  1000: {
+    message: "Custom Message",
+    populate: (guest, company, _, customMessage) => {
+      return `${getTimeOfDayGreeting(company.timezone)}, ${guest.firstName} ${
+        guest.lastName
+      }. ${customMessage} -From ${company.company}`;
+    },
+  },
   1001: {
     message: "Welcome!",
     populate: (guest, company) => {

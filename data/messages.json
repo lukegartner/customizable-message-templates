@@ -1,5 +1,11 @@
 [
   {
+    "id": "1000",
+    "companyIds": [1, 2, 3, 4, 5],
+    "message": "Custom Message",
+    "variables": ["guest", "company", "custom message"]
+  },
+  {
     "id": "1001",
     "companyIds": [1, 2, 3, 4, 5],
     "message": "Welcome!",
