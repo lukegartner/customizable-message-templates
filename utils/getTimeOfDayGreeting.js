@@ -41,11 +41,11 @@ export const getTimeOfDayGreeting = (timeZone) => {
     return "Good Morning";
   } else if (timeOfDay >= 12 && timeOfDay < 17) {
     return "Good Afternoon";
-  } else if (timeOfDay >= 17 && timeOfDay < 22) {
+  } else if (timeOfDay >= 17 && timeOfDay < 24) {
     return "Good Evening";
-  } else if (timeOfDay >= 22 && timeOfDay < 4) {
+  } else if ((timeOfDay >= 24 && timeOfDay < 4) || timeOfDay === 0) {
     return "Thank you for recieving this overnight message";
+  } else {
+    return "Hello";
   }
-
-  return;
 };
