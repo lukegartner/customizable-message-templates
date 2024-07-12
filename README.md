@@ -26,11 +26,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Design Decisions
 
-This project uses components and utility functions to separate logic into more easily consumable chunks. TailwindCss and DaisyUI were used to achieve familiar web design elements for ease of use at first glance.
+This project uses components and utility functions to separate logic into more easily consumable chunks.
+
+Much of the logic will be found in /components/MessageConstructor.jsx which interacts with json data in /data and the message template object stored in /utils/messageTemplates.js. The function that handles greetings based on time of day is found in /utils/getTimeOfDayGreeting.js
+
+TailwindCss and DaisyUI were used to achieve familiar web design elements for ease of use at first glance.
 
 ## Technology used
 
-This project was created using JavaScript and Next.JS. I used this as it has a great organization benefits and ease of scallability when converting to database and server in the future from simple json files.
+This project was created using JavaScript and Next.JS. I used this as it has a great organization benefits and ease of scallability when converting to using a database and server in the future instead of static json files.
 
 This project uses Tailwind Css and DaisyUI to quickly give ease of use and styling to the UI elements.
 
@@ -42,4 +46,4 @@ This project used testing to handle errors and edge cases manually testing for v
 
 With more time dedicated to this project I would like to introduce a database to store the data and using Next.js's convenient tools to fetch the json. I did not want to go outside the bounds of the instructions to use json files for this submission.
 
-I would also like to add UI for adding new custom templates instead of just from the code.
+I would also like to add UI for adding new custom templates instead of just from the code and store them in the database for long term use.
